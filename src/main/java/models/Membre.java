@@ -13,6 +13,16 @@ public class Membre {
         this.phone=phone;
         this.email=email;
     }
+    public Membre(String nom, String prenom, String email, String phone){
+        this.nom=nom;
+        this.prenom=prenom;
+        this.phone=phone;
+        this.email=email;
+    }
+
+    public Membre(String valeur, String valeur1, String valeur2, String valeur3, String valeur4) {
+
+    }
 
     public String getNom() {
         return nom;
