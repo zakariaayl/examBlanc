@@ -21,7 +21,7 @@ public class MembreDaoImpl implements MembreDao {
         try {
             Connection conn = DriverManager.getConnection(url, name, passwd);
             String id = String.valueOf(UUID.randomUUID());
-            String sql = "INSERT INTO incident VALUES(?,?,?,?,?)";
+            String sql = "INSERT INTO membre VALUES(?,?,?,?,?)";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, id);
             stmt.setString(2, m.getNom());
